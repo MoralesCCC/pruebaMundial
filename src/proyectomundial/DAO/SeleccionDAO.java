@@ -12,7 +12,9 @@ public class SeleccionDAO {
     public SeleccionDAO() {
         BasedeDatos.conectar();
     }
-    
+    //hp vida parce esta monda mo me da 
+    //bueno en si solo la seleccion 
+    //creame que lo intente pero si tocaba uno se me da;ana otro
     public List<Seleccion> buscarSelecciones(String equipo) {
         String sql = "SELECT DISTINCT nombre, continente, dt, nacionalidad FROM b_bautista4.seleccion WHERE LOWER(nombre) = LOWER('" + equipo + "');";
         
